@@ -1,11 +1,15 @@
 const {Sequelize} = require('sequelize');
 
 const sequelize = new Sequelize({
-    database: 'sequelize_expressjs',
-    host: 'localhost',
-    username: 'root',
-    password: 'root',
-    dialect: 'mysql'
+    database: 'dfvgup6vipnsuc',
+    host: 'ec2-34-194-171-47.compute-1.amazonaws.com',
+    username: 'lnpoooqphxohwe',
+    password: 'a2a1e1944d7cebd8c5101d54bb634b4e5391d0c3b52c9d93e86bee5a0a6e2bda',
+    port: 5432,
+    dialect: 'postgres',
+    dialectOptions: {
+        ssl: {rejectUnauthorized: false}
+    }
 });
 
 (async ()=> {
